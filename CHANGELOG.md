@@ -1,12 +1,13 @@
-Follow the news and releases on [Mastodon](https://fosstodon.org/@golangcilint) and on [Bluesky](https://bsky.app/profile/golangci-lint.run).
-
-`golangci-lint` is a free and open-source project built by volunteers.
-
-If you value it, consider supporting us, we appreciate it!
-
-[![Donate](https://img.shields.io/badge/Donate-❤️-blue?style=for-the-badge)](https://donate.golangci.org)
-
 <!-- START --->
+
+### t2fn Enhanced Fork
+
+This fork integrates `github.com/t2fn/godoc-lint` with full support for all 9 checkers, including the critical `require-func-docs` rule that enforces documented function parameters and return values.
+
+**Key enhancements:**
+- Full godoclint integration with t2fn/godoc-lint (upstream version lacked `require-func-docs`)
+- Support for all t2fn checker options: `broken_doclink`, `deprecated`, `max_len`, `no_unused_link`, `pkg_doc`, `require_doc`, `require_func_docs`, `start_with_name`, `stdlib_doclink`
+- Extended `GodoclintSettings` with `RequireFuncDocs.IncludeTests` configuration option
 
 ### v2.12.2
 

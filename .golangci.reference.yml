@@ -1319,32 +1319,38 @@ linters:
       # Default: empty
       enable:
         # Check proper package-level godoc, if any.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#pkg-doc
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#pkg-doc
         - pkg-doc
         # Assert at most one godoc per package.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#single-pkg-doc
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#single-pkg-doc
         - single-pkg-doc
         # Require all packages to have a godoc.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#require-pkg-doc
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#require-pkg-doc
         - require-pkg-doc
         # Assert symbol godocs start with the symbol name.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#start-with-name
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#start-with-name
         - start-with-name
         # Require godoc for all public symbols.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#require-doc
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#require-doc
         - require-doc
         # Assert correct formatting of deprecation notes.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#deprecated
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#deprecated
         - deprecated
         # Assert maximum line length for godocs.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#max-len
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#max-len
         - max-len
         # Assert no unused link in godocs.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#no-unused-link
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#no-unused-link
         - no-unused-link
         # Require proper doc links to standard library declarations where applicable.
-        # https://github.com/godoc-lint/godoc-lint?tab=readme-ov-file#require-stdlib-doclink
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#require-stdlib-doclink
         - require-stdlib-doclink
+        # Enforce documented function parameters and return values (t2fn enhancement).
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#require-func-docs
+        - require-func-docs
+        # Detect broken documentation links in godocs.
+        # https://github.com/t2fn/godoc-lint?tab=readme-ov-file#broken-doclink
+        - broken-doclink
 
       # List of rules to disable.
       # Default: empty
@@ -1358,6 +1364,8 @@ linters:
         - max-len
         - no-unused-link
         - require-stdlib-doclink
+        - require-func-docs
+        - broken-doclink
 
       # A map for fine-tuning individual rules.
       # All subkeys are optional.
@@ -1376,10 +1384,26 @@ linters:
           # Default: true
           ignore-unexported: false
 
+          # Enable strict field documentation checking for structs and interfaces.
+          # Requires all exported fields to have godoc comments.
+          # Default: false
+          strict-fields: true
+
         start-with-name:
           # Include unexported symbols when applying the `start-with-name` rule.
           # Default: false
           include-unexported: true
+
+        require-func-docs:
+          # Include test files when applying the `require-func-docs` rule.
+          # This enforces documented function parameters and return values in tests.
+          # Default: false (test files excluded by default)
+          include-tests: true
+
+        broken-doclink:
+          # Include test files when checking for broken documentation links.
+          # Default: false (test files excluded by default)
+          include-tests: true
 
     godot:
       # Comments to be checked: `declarations`, `toplevel`, `noinline` or `all`.

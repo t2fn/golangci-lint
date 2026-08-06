@@ -11,6 +11,52 @@
 It runs linters in parallel, uses caching, supports YAML configuration,
 integrates with all major IDEs, and includes over a hundred linters.
 
+**This is the t2fn enhanced fork.** It integrates `github.com/t2fn/godoc-lint` 
+with full support for all 9 checkers including the critical `require-func-docs` rule 
+for enforcing documented function parameters and return values. This fork also incorporates
+community-requested improvements from upstream issues while maintaining backward compatibility.
+
+## Godoc-lint Integration
+
+This fork includes a custom integration with [t2fn/godoc-lint](https://github.com/t2fn/godoc-lint) that provides:
+- `broken-doclink`: Detects broken documentation links in Go comments
+- `require-func-docs`: Enforces documented function parameters and return values  
+- `single-pkg-doc`/`require-pkg-doc`: Package documentation rules
+- And more...
+
+### Development Setup
+
+For local development with the forked godoc-lint:
+
+```bash
+# Clone this repo
+git clone https://github.com/t2fn/golangci-lint.git
+cd golangci-lint
+
+# Clone the godoc-lint fork (if not already done)
+git clone https://github.com/t2fn/godoc-lint.git /workdir/godoc-lint  # Adjust path as needed
+
+# The go.mod replace directive points to local fork for development
+go mod tidy && make build
+
+# Run tests
+go test ./pkg/golinters/godoclint/...
+```
+
+### Production/Release Setup
+
+For `go install` and CI/CD, the replace directive should point to the published version:
+
+```bash
+# Edit go.mod - comment out local replace and use GitHub version:
+# replace github.com/t2fn/godoc-lint => /workdir/godoc-lint
+replace github.com/t2fn/godoc-lint => github.com/t2fn/godoc-lint v0.11.3
+
+go mod tidy && go install ./cmd/golangci-lint@latest
+```
+
+Or publish a tagged release of golangci-lint with the proper replace directive for production use.
+
 ## Install `golangci-lint`
 
 - [On my machine](https://golangci-lint.run/docs/welcome/install/local);
@@ -30,11 +76,6 @@ Documentation is hosted at https://golangci-lint.run.
 ## Support Us
 
 `golangci-lint` is a free and open-source project built by volunteers.
-
-If you value it, consider supporting us, we appreciate it! :heart:
-
-[![Golangci-lint](https://img.shields.io/badge/Support-golangci_lint-blue?style=for-the-badge)](https://donate.golangci.org)
-[![Linter Authors](https://img.shields.io/badge/Support-Linter_Authors-blue?style=for-the-badge)](https://golangci-lint.run/docs/product/thanks/)
 
 ## Badges
 

@@ -350,7 +350,7 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 
 		linter.NewConfig(godoclint.New(&cfg.Linters.Settings.Godoclint)).
 			WithSince("v2.5.0").
-			WithURL("https://github.com/godoc-lint/godoc-lint"),
+			WithURL("https://github.com/t2fn/godoc-lint"),
 
 		linter.NewConfig(godot.New(&cfg.Linters.Settings.Godot)).
 			WithSince("v1.25.0").

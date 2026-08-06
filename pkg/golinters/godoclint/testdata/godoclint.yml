@@ -6,6 +6,7 @@ linters:
       default: none
       enable:
         - pkg-doc
+        - single-pkg-doc
         - require-pkg-doc
         - start-with-name
         - require-doc

@@ -603,10 +603,17 @@ type GodoclintSettings struct {
 		RequireDoc struct {
 			IgnoreExported   *bool `mapstructure:"ignore-exported"`
 			IgnoreUnexported *bool `mapstructure:"ignore-unexported"`
+			StrictFields     *bool `mapstructure:"strict-fields"`
 		} `mapstructure:"require-doc"`
 		StartWithName struct {
 			IncludeUnexported *bool `mapstructure:"include-unexported"`
 		} `mapstructure:"start-with-name"`
+		RequireFuncDocs struct {
+			IncludeTests *bool `mapstructure:"include-tests"`
+		} `mapstructure:"require-func-docs"`
+		BrokenDoclink struct {
+			IncludeTests *bool `mapstructure:"include-tests"`
+		} `mapstructure:"broken-doclink"`
 	} `mapstructure:"options"`
 }
 

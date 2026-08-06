@@ -15,7 +15,7 @@ build: $(BINARY)
 .PHONY: build
 
 build_race:
-	go build -race -o $(BINARY) ./cmd/golangci-lint
+	go build -race -buildvcs=false -o $(BINARY) ./cmd/golangci-lint
 .PHONY: build_race
 
 clean:
@@ -88,7 +88,7 @@ hyperfine:
 # Non-PHONY targets (real files)
 
 $(BINARY): FORCE
-	go build -o $@ ./cmd/golangci-lint
+	go build -buildvcs=false -o $@ ./cmd/golangci-lint
 
 assets/github-action-config.json: FORCE $(BINARY)
 	# go run ./scripts/gen_github_action_config/main.go $@

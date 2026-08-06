@@ -1,4 +1,4 @@
-module github.com/golangci/golangci-lint/v2
+module github.com/t2fn/golangci-lint/v2
 
 // The minimum Go version must always be latest-1.
 // This version should never be changed outside of the PR to add the support of newer Go version.
@@ -62,7 +62,6 @@ require (
 	github.com/go-critic/go-critic v0.14.4
 	github.com/go-viper/mapstructure/v2 v2.5.0
 	github.com/go-xmlfmt/xmlfmt v1.1.3
-	github.com/godoc-lint/godoc-lint v0.11.2
 	github.com/gofrs/flock v0.13.0
 	github.com/golangci/asciicheck v0.5.0
 	github.com/golangci/dupl v0.0.0-20260401084720-c99c5cf5c202
@@ -131,6 +130,7 @@ require (
 	github.com/ssgreg/nlreturn/v2 v2.2.1
 	github.com/stbenjam/no-sprintf-host-port v0.3.1
 	github.com/stretchr/testify v1.11.1
+	github.com/t2fn/godoc-lint v0.11.3
 	github.com/tetafro/godot v1.5.6
 	github.com/timakin/bodyclose v0.0.0-20260129054331-73d1f95b84b4
 	github.com/timonwong/loggercheck v0.11.0
@@ -243,3 +243,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/t2fn/godoc-lint => github.com/t2fn/godoc-lint v0.11.3

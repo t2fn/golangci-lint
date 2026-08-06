@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"slices"
 
-	glcompose "github.com/godoc-lint/godoc-lint/pkg/compose"
-	glconfig "github.com/godoc-lint/godoc-lint/pkg/config"
-	"github.com/godoc-lint/godoc-lint/pkg/model"
+	glcompose "github.com/t2fn/godoc-lint/pkg/compose"
+	glconfig "github.com/t2fn/godoc-lint/pkg/config"
+	"github.com/t2fn/godoc-lint/pkg/model"
 
 	"github.com/golangci/golangci-lint/v2/pkg/config"
 	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
@@ -54,10 +54,13 @@ func New(settings *config.GodoclintSettings) *goanalysis.Linter {
 				RequireDocIncludeTests:           pointer(true),
 				RequireDocIgnoreExported:         settings.Options.RequireDoc.IgnoreExported,
 				RequireDocIgnoreUnexported:       settings.Options.RequireDoc.IgnoreUnexported,
+				RequireDocStrictFields:           settings.Options.RequireDoc.StrictFields,
 				StartWithNameIncludeTests:        pointer(false),
 				StartWithNameIncludeUnexported:   settings.Options.StartWithName.IncludeUnexported,
 				RequireStdlibDoclinkIncludeTests: pointer(true),
 				NoUnusedLinkIncludeTests:         pointer(true),
+				BrokenDoclinkIncludeTests:        settings.Options.BrokenDoclink.IncludeTests,
+				RequireFuncDocsIncludeTests:      settings.Options.RequireFuncDocs.IncludeTests,
 			},
 		}
 
