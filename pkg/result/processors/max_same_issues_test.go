@@ -3,9 +3,9 @@ package processors
 import (
 	"testing"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
-	"github.com/golangci/golangci-lint/v2/pkg/result"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/result"
 )
 
 func TestMaxSameIssues(t *testing.T) {

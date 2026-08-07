@@ -3,8 +3,8 @@ package nilnesserr
 import (
 	"github.com/alingse/nilnesserr"
 
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/v2/pkg/golinters/internal"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/golinters/internal"
 )
 
 func New() *goanalysis.Linter {

@@ -56,9 +56,9 @@ import (
 	"golang.org/x/tools/go/analysis/passes/unusedwrite"
 	"golang.org/x/tools/go/analysis/passes/waitgroup"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
 )
 
 var (

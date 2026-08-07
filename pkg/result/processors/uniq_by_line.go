@@ -1,7 +1,7 @@
 package processors
 
 import (
-	"github.com/golangci/golangci-lint/v2/pkg/result"
+	"github.com/t2fn/golangci-lint/v2/pkg/result"
 )
 
 const uniqByLineLimit = 1

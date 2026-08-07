@@ -13,14 +13,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	jsonsch "github.com/golangci/golangci-lint/v2/jsonschema"
-	"github.com/golangci/golangci-lint/v2/pkg/commands/internal/migrate"
-	"github.com/golangci/golangci-lint/v2/pkg/commands/internal/migrate/fakeloader"
-	"github.com/golangci/golangci-lint/v2/pkg/commands/internal/migrate/parser"
-	"github.com/golangci/golangci-lint/v2/pkg/commands/internal/migrate/versionone"
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/exitcodes"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
+	jsonsch "github.com/t2fn/golangci-lint/v2/jsonschema"
+	"github.com/t2fn/golangci-lint/v2/pkg/commands/internal/migrate"
+	"github.com/t2fn/golangci-lint/v2/pkg/commands/internal/migrate/fakeloader"
+	"github.com/t2fn/golangci-lint/v2/pkg/commands/internal/migrate/parser"
+	"github.com/t2fn/golangci-lint/v2/pkg/commands/internal/migrate/versionone"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/exitcodes"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
 )
 
 type migrateOptions struct {

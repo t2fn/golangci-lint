@@ -10,8 +10,8 @@ import (
 
 	gocriticlinter "github.com/go-critic/go-critic/linter"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
 )
 
 type settingsWrapper struct {

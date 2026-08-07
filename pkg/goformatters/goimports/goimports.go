@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/tools/imports"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
 )
 
 const Name = "goimports"

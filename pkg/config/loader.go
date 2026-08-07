@@ -10,9 +10,9 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
-	"github.com/golangci/golangci-lint/v2/pkg/fsutils"
-	"github.com/golangci/golangci-lint/v2/pkg/goutil"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/fsutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/goutil"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
 )
 
 var errConfigDisabled = errors.New("config is disabled by --no-config")

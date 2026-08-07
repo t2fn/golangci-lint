@@ -3,9 +3,9 @@ package exhaustruct
 import (
 	exhaustruct "dev.gaijin.team/go/exhaustruct/v5/analyzer"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/v2/pkg/golinters/internal"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/golinters/internal"
 )
 
 func NewV5(settings *config.ExhaustructV5Settings) *goanalysis.Linter {

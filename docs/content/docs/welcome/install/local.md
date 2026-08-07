@@ -128,7 +128,7 @@ These installations aren't recommended because of the following points:
 7. It's slower than binary installation.
 
 ```bash
-go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@{{< golangci/latest-version >}}
+go install github.com/t2fn/golangci-lint/v2/cmd/golangci-lint@{{< golangci/latest-version >}}
 ```
 
 {{% details title="`go tool` usage recommendations" closed="true" %}}
@@ -154,7 +154,7 @@ go mod init -modfile=golangci-lint.mod <your_module_path>/golangci-lint
 
 ```sh
 # Add golangci-lint as a tool
-go get -tool -modfile=golangci-lint.mod github.com/golangci/golangci-lint/v2/cmd/golangci-lint@{{< golangci/latest-version >}}
+go get -tool -modfile=golangci-lint.mod github.com/t2fn/golangci-lint/v2/cmd/golangci-lint@{{< golangci/latest-version >}}
 ```
 
 ```sh
@@ -164,7 +164,7 @@ go tool -modfile=golangci-lint.mod golangci-lint run
 
 ```sh
 # Update golangci-lint
-go get -tool -modfile=golangci-lint.mod github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
+go get -tool -modfile=golangci-lint.mod github.com/t2fn/golangci-lint/v2/cmd/golangci-lint@latest
 ```
 
 **Method 2: dedicated module**
@@ -187,7 +187,7 @@ go work init . golangci-lint
 
 ```sh
 # Add golangci-lint as a tool
-go get -tool -modfile=golangci-lint/go.mod github.com/golangci/golangci-lint/v2/cmd/golangci-lint
+go get -tool -modfile=golangci-lint/go.mod github.com/t2fn/golangci-lint/v2/cmd/golangci-lint
 ```
 
 ```sh
@@ -197,7 +197,7 @@ go tool golangci-lint run
 
 ```sh
 # Update golangci-lint
-go get -tool -modfile=golangci-lint/go.mod github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
+go get -tool -modfile=golangci-lint/go.mod github.com/t2fn/golangci-lint/v2/cmd/golangci-lint@latest
 ```
 
 {{% /details %}}

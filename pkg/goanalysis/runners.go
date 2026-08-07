@@ -9,11 +9,11 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
 
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis/pkgerrors"
-	"github.com/golangci/golangci-lint/v2/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
-	"github.com/golangci/golangci-lint/v2/pkg/result"
-	"github.com/golangci/golangci-lint/v2/pkg/timeutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis/pkgerrors"
+	"github.com/t2fn/golangci-lint/v2/pkg/lint/linter"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/result"
+	"github.com/t2fn/golangci-lint/v2/pkg/timeutils"
 )
 
 type runAnalyzersConfig interface {

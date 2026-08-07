@@ -18,12 +18,12 @@ import (
 	"github.com/mgechev/revive/rule"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/v2/pkg/golinters/internal"
-	"github.com/golangci/golangci-lint/v2/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
-	"github.com/golangci/golangci-lint/v2/pkg/result"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/golinters/internal"
+	"github.com/t2fn/golangci-lint/v2/pkg/lint/linter"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/result"
 )
 
 const linterName = "revive"

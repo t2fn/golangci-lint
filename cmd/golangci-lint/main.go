@@ -8,8 +8,8 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/golangci/golangci-lint/v2/pkg/commands"
-	"github.com/golangci/golangci-lint/v2/pkg/exitcodes"
+	"github.com/t2fn/golangci-lint/v2/pkg/commands"
+	"github.com/t2fn/golangci-lint/v2/pkg/exitcodes"
 )
 
 var (

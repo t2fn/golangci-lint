@@ -5,8 +5,8 @@ import (
 
 	"gitlab.com/bosi/decorder"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
 )
 
 func New(settings *config.DecorderSettings) *goanalysis.Linter {

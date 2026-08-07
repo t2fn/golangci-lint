@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/golangci/golangci-lint/v2/internal/cache"
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/exitcodes"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis/load"
-	"github.com/golangci/golangci-lint/v2/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/v2/pkg/logutils"
+	"github.com/t2fn/golangci-lint/v2/internal/cache"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/exitcodes"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis/load"
+	"github.com/t2fn/golangci-lint/v2/pkg/lint/linter"
+	"github.com/t2fn/golangci-lint/v2/pkg/logutils"
 )
 
 type ContextBuilder struct {

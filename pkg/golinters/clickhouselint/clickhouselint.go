@@ -5,7 +5,7 @@ import (
 	"github.com/ClickHouse/clickhouse-go-linter/passes/chrowserr"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
 )
 
 func New() *goanalysis.Linter {

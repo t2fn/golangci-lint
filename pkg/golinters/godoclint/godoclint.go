@@ -9,9 +9,9 @@ import (
 	glconfig "github.com/t2fn/godoc-lint/pkg/config"
 	"github.com/t2fn/godoc-lint/pkg/model"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
-	"github.com/golangci/golangci-lint/v2/pkg/golinters/internal"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/golinters/internal"
 )
 
 func New(settings *config.GodoclintSettings) *goanalysis.Linter {

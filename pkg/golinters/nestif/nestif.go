@@ -4,8 +4,8 @@ import (
 	"github.com/nakabonne/nestif"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goanalysis"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goanalysis"
 )
 
 func New(settings *config.NestifSettings) *goanalysis.Linter {

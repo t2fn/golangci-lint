@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/golangci/golangci-lint/v2/pkg/fsutils"
+	"github.com/t2fn/golangci-lint/v2/pkg/fsutils"
 )
 
 func TestOutput_Validate(t *testing.T) {

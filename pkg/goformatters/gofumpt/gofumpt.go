@@ -5,8 +5,8 @@ import (
 
 	gofumpt "mvdan.cc/gofumpt/format"
 
-	"github.com/golangci/golangci-lint/v2/pkg/config"
-	"github.com/golangci/golangci-lint/v2/pkg/goformatters/internal"
+	"github.com/t2fn/golangci-lint/v2/pkg/config"
+	"github.com/t2fn/golangci-lint/v2/pkg/goformatters/internal"
 )
 
 const Name = "gofumpt"

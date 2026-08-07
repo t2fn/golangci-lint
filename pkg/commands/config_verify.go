@@ -14,8 +14,8 @@ import (
 	"github.com/spf13/cobra"
 	"go.yaml.in/yaml/v3"
 
-	jsonsch "github.com/golangci/golangci-lint/v2/jsonschema"
-	"github.com/golangci/golangci-lint/v2/pkg/exitcodes"
+	jsonsch "github.com/t2fn/golangci-lint/v2/jsonschema"
+	"github.com/t2fn/golangci-lint/v2/pkg/exitcodes"
 )
 
 func (c *configCommand) executeVerify(cmd *cobra.Command, _ []string) error {
