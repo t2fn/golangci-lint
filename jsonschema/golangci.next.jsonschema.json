@@ -488,7 +488,9 @@
         "deprecated",
         "max-len",
         "no-unused-link",
-        "require-stdlib-doclink"
+        "require-stdlib-doclink",
+        "broken-doclink",
+        "require-func-docs"
       ]
     },
     "gosec-rules": {
@@ -2114,6 +2116,26 @@
                     "include-unexported": {
                       "type": "boolean",
                       "description": "Include unexported symbols when applying the `start-with-name` rule.",
+                      "default": false
+                    }
+                  }
+                },
+                "broken-doclink": {
+                  "type": "object",
+                  "properties": {
+                    "include-tests": {
+                      "type": "boolean",
+                      "description": "Include test files when applying the `broken-doclink` rule.",
+                      "default": false
+                    }
+                  }
+                },
+                "require-func-docs": {
+                  "type": "object",
+                  "properties": {
+                    "include-tests": {
+                      "type": "boolean",
+                      "description": "Include test files when applying the `require-func-docs` rule.",
                       "default": false
                     }
                   }

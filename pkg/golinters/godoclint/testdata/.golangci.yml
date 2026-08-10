@@ -1,0 +1,14 @@
+version: "2"
+
+linters:
+  enable:
+    - godoclint
+  
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - broken-doclink
+      options:
+        broken-doclink:
+          include-tests: true

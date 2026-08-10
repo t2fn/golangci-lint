@@ -1,0 +1,17 @@
+version: "2"
+
+linters:
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - pkg-doc
+        - broken-doclink
+      options:
+        start-with-name:
+          include-unexported: true
+        require-doc:
+          ignore-exported: false
+          ignore-unexported: false
+        max-len:
+          length: 127

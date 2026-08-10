@@ -1,0 +1,18 @@
+version: "2"
+
+linters:
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - pkg-doc
+        - single-pkg-doc
+        - require-pkg-doc
+        - start-with-name
+        - broken-doclink
+      options:
+        start-with-name:
+          include-unexported: true
+        require-doc:
+          ignore-exported: false
+          ignore-unexported: false

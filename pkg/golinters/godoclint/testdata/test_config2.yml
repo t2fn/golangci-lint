@@ -1,0 +1,12 @@
+version: "2"
+
+linters:
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - pkg-doc
+        - broken-doclink
+      options:
+        broken-doclink:
+          include-tests: true

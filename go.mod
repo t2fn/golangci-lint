@@ -242,5 +242,3 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/t2fn/godoc-lint => github.com/t2fn/godoc-lint v0.11.3

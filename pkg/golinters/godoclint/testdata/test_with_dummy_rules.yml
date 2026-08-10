@@ -1,0 +1,10 @@
+version: "2"
+
+linters:
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - broken-doclink
+        - pkg-doc
+      options: {}

@@ -1,0 +1,8 @@
+version: "2"
+
+linters:
+  settings:
+    godoclint:
+      default: none
+      enable:
+        - pkg-doc
